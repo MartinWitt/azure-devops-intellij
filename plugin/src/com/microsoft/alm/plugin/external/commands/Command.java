@@ -348,7 +348,7 @@ public abstract class Command<T> {
                 lines.remove(0);
             }
         }
-        return lines.toArray(new String[lines.size()]);
+        return lines.toArray(new String[0]);
     }
 
     /**
