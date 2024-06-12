@@ -51,7 +51,7 @@ public class ServerEventManager {
         final ServerEventListener[] localListeners;
         synchronized (this.listeners) {
             // Copy the list of listeners in case someone tries to add or remove a listener while we are looping
-            localListeners = this.listeners.toArray(new ServerEventListener[this.listeners.size()]);
+            localListeners = this.listeners.toArray(new ServerEventListener[0]);
         }
         for (int i = localListeners.length - 1; i >= 0; i--) {
             // Copy the map so no one can change it on us

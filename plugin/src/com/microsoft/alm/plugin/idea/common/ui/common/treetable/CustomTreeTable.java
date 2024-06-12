@@ -147,7 +147,7 @@ public class CustomTreeTable<T> extends TreeTable {
         } else {
             root = null;
         }
-        return new ListTreeTableModelOnColumns(root, columnsInfos.toArray(new ColumnInfo[columnsInfos.size()]));
+        return new ListTreeTableModelOnColumns(root, columnsInfos.toArray(new ColumnInfo[0]));
     }
 
     private static <T> void addChildren(final DefaultMutableTreeNode parentNode, final ContentProvider<T> contentProvider) {
